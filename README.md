@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+<p align="center">
+ <img width="160px" src="https://i.ibb.co/YtyPmgy/appedir-Logo.png"><br/>
+  <h2 align="center">MERCADITO APP </h2>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Appendix
 
-## Available Scripts
+- Description
+- Previous requirements
+- Clone Project
+- Environment variables
+- Android Set Up
+- iOS Set Up
+- Work Environments
+- Generate Android .apk
+- Generate iOS TestFlight
+- FAQ
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+#### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+#### Previous requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Install latest LTS Nodejs at [NodeJS.org](https://nodejs.org/es/).
+- You must have already installed [React Native CLI](https://reactnative.dev/docs/environment-setup "React Native CLI") on Android / iOS and their dependencies.
+- Ask for environment variables and key stores to your lead.
 
-### `yarn build`
+Check node and npm versions:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  node --version
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> v16.15.0
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm --version
+```
 
-### `yarn eject`
+> 8.5.5
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Clone Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+  git clone git@bitbucket.org:tradesystem/mercadito_app.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Go to the project directory
 
-## Learn More
+```bash
+  cd mercadito_app
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  npm install
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Environment variables
 
-### Analyzing the Bundle Size
+1. Paste the development variables at location:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> enviroments/dev
 
-### Making a Progressive Web App
+2. Paste the production variables at location:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> enviroments/prod
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Android Set Up
 
-### Deployment
+Paste the keyStores at location:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> android/app
 
-### `yarn build` fails to minify
+Run command the follow command to start the server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm run android
+```
+
+---
+
+#### iOS Set Up
+
+Install Pods dependencies:
+
+```bash
+  npm run pods
+```
+
+Open project in XCode tu run iOS server.
+
+#### Work Environments
+
+To change the environment you must run:
+
+1. For Development:
+
+```bash
+  ./switchenv.sh dev
+```
+
+2.  For Staging:
+
+```bash
+  ./switchenv.sh staging
+```
+
+3. For Production:
+
+```bash
+  ./switchenv.sh prod
+```
+
+---
+
+### Generate Android .apk
+
+Run the follow command:
+
+```bash
+  npm run release
+```
+
+The generated apk must be at location:
+
+> android/app/build/outputs/apk/release
+
+### Generate iOS TestFlight
+
+---
+
+## FAQ
+
+#### Question 1
+
+Answer 1
+
+#### Question 2
+
+Answer 2
